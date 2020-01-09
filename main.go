@@ -60,6 +60,7 @@ func main() {
 	router.HandleFunc("/books/{id}", removeBook).Methods("DELETE")
 
 	fmt.Println("Running on port 8000")
+	fmt.Println("Hola Dev")
 	log.Fatal(http.ListenAndServe(":8000", router))
 }
 
